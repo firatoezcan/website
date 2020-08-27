@@ -1,10 +1,15 @@
 // next.config.js
 const {
   withPlugins,
-  extend
+  optional
 } = require("next-compose-plugins");
 const optimizedImages = require("next-optimized-images");
-const withPreact = require('next-plugin-preact');
+const {
+  PHASE_PRODUCTION_BUILD,
+  PHASE_PRODUCTION_SERVER,
+  PHASE_DEVELOPMENT_SERVER,
+  PHASE_EXPORT,
+} = require('next/constants');
 
 module.exports = withPlugins([
   [optimizedImages, {
@@ -19,7 +24,9 @@ module.exports = withPlugins([
     },
     pngquant: true,
   }, ],
-  [withPreact]
+  [optional(() => require('next-plugin-preact')), {},
+    [PHASE_PRODUCTION_BUILD]
+  ]
 
   // your other plugins here
 

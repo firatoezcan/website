@@ -62,84 +62,87 @@ const Index = () => {
                   </a>
                 </section>
               </Container>
+
               <div className="relative mt-16">
-                <div className="w-full max-w-2xl mx-auto relative z-10">
-                  {!hasSentForm && (
-                    <form
-                      id="contact"
-                      onSubmit={async (event) => {
-                        event.preventDefault();
-                        const data = ([...event.currentTarget.elements] as Array<HTMLInputElement>).reduce(
-                          (acc, { id, value }) => ({ ...acc, [id]: value }),
-                          {}
-                        );
-                        const headers = new Headers();
-                        headers.append("Content-Type", "application/json");
-                        await fetch("https://enzql28h64jifyn.m.pipedream.net", {
-                          method: "POST",
-                          headers,
-                          mode: "cors",
-                          body: JSON.stringify(data),
-                        });
-                        const newCat = await getNewRandomCat();
-                        setRandomCat(newCat);
-                        setHasSentForm(true);
-                      }}
-                      className="flex -mx-6 flex-wrap"
-                    >
-                      <div className="mb-4 w-1/2 px-6">
-                        <Input id="firstName" label="Vorname" placeholder="Firat" required />
-                      </div>
-                      <div className="mb-4 w-1/2 px-6">
-                        <Input id="lastName" label="Nachname" placeholder="Özcan" required />
-                      </div>
-                      <div className="mb-4 w-1/2 px-6">
-                        <Input id="email" label="E-Mail" placeholder="firat.oezcan@gmail.com" required />
-                      </div>
-                      <div className="mb-4 w-1/2 px-6">
-                        <Input id="phone" label="Telefonnummer" placeholder="0123 456 789" required />
-                      </div>
-                      <div className="mb-4 w-full px-6">
-                        <Textarea
-                          id="message"
-                          label="Deine Nachricht"
-                          placeholder="Hey Firat, nett dich kennenzulernen. Ich hab ein tolles Projekt für dich!"
-                          required
-                        />
-                      </div>
-                      <div className="mb-4 w-full text-right px-6">
-                        <button
-                          type="submit"
-                          className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
-                        >
-                          Nachricht versenden
-                        </button>
-                      </div>
-                    </form>
-                  )}
-                  {hasSentForm && (
-                    <div id="cat-sim">
-                      <h2 className="text-3xl font-medium">Vielen Dank für deine Nachricht!</h2>
-                      <p className="text-xl mb-1">
-                        Solange du auf eine Antwort wartest, kannst du dir hier zufällige Katzenbilder anschauen
-                      </p>
-                      <img src={randomCat} alt="Absolut süße Katze, alle Katzen sind süß" className="h-80 block" />
-                      <button
-                        onClick={async () => {
-                          if (catIsLoading) return;
-                          setCatIsLoading(true);
+                <Container>
+                  <div className="w-full max-w-2xl mx-auto relative z-10">
+                    {!hasSentForm && (
+                      <form
+                        id="contact"
+                        onSubmit={async (event) => {
+                          event.preventDefault();
+                          const data = ([...event.currentTarget.elements] as Array<HTMLInputElement>).reduce(
+                            (acc, { id, value }) => ({ ...acc, [id]: value }),
+                            {}
+                          );
+                          const headers = new Headers();
+                          headers.append("Content-Type", "application/json");
+                          await fetch("https://enzql28h64jifyn.m.pipedream.net", {
+                            method: "POST",
+                            headers,
+                            mode: "cors",
+                            body: JSON.stringify(data),
+                          });
                           const newCat = await getNewRandomCat();
                           setRandomCat(newCat);
-                          setCatIsLoading(false);
+                          setHasSentForm(true);
                         }}
-                        className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
+                        className="flex sm:-mx-6 flex-wrap"
                       >
-                        NEUE KATZE BITTE!!!
-                      </button>
-                      <p className="text-xl mt-2">Liebe Grüße aus dem Dorfe ❤</p>
-                    </div>
-                  )}
-                </div>
+                        <div className="mb-4 w-full sm:w-1/2 sm:px-6">
+                          <Input id="firstName" label="Vorname" placeholder="Firat" required />
+                        </div>
+                        <div className="mb-4 w-full sm:w-1/2 sm:px-6">
+                          <Input id="lastName" label="Nachname" placeholder="Özcan" required />
+                        </div>
+                        <div className="mb-4 w-full sm:w-1/2 sm:px-6">
+                          <Input id="email" label="E-Mail" placeholder="firat.oezcan@gmail.com" required />
+                        </div>
+                        <div className="mb-4 w-full sm:w-1/2 sm:px-6">
+                          <Input id="phone" label="Telefonnummer" placeholder="0123 456 789" required />
+                        </div>
+                        <div className="mb-4 w-full sm:px-6">
+                          <Textarea
+                            id="message"
+                            label="Deine Nachricht"
+                            placeholder="Hey Firat, nett dich kennenzulernen. Ich hab ein tolles Projekt für dich!"
+                            required
+                          />
+                        </div>
+                        <div className="mb-4 w-full text-right sm:px-6">
+                          <button
+                            type="submit"
+                            className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
+                          >
+                            Nachricht versenden
+                          </button>
+                        </div>
+                      </form>
+                    )}
+                    {hasSentForm && (
+                      <div id="cat-sim">
+                        <h2 className="text-3xl font-medium">Vielen Dank für deine Nachricht!</h2>
+                        <p className="text-xl mb-1">
+                          Solange du auf eine Antwort wartest, kannst du dir hier zufällige Katzenbilder anschauen
+                        </p>
+                        <img src={randomCat} alt="Absolut süße Katze, alle Katzen sind süß" className="h-80 block" />
+                        <button
+                          onClick={async () => {
+                            if (catIsLoading) return;
+                            setCatIsLoading(true);
+                            const newCat = await getNewRandomCat();
+                            setRandomCat(newCat);
+                            setCatIsLoading(false);
+                          }}
+                          className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
+                        >
+                          NEUE KATZE BITTE!!!
+                        </button>
+                        <p className="text-xl mt-2">Liebe Grüße aus dem Dorfe ❤</p>
+                      </div>
+                    )}
+                  </div>
+                </Container>
                 <svg
                   viewBox="0 0 1695 563"
                   preserveAspectRatio="none"
