@@ -18,7 +18,7 @@ export const Input: FunctionComponent<InputProps> = ({ label, id, placeholder, r
         id={id}
         type="text"
         placeholder={placeholder}
-        required={!required}
+        required={required}
       />
     </>
   );
@@ -35,7 +35,7 @@ export const Textarea: FunctionComponent<InputProps> = ({ label, id, placeholder
         id={id}
         placeholder={placeholder}
         rows={6}
-        required={!required}
+        required={required}
       />
     </>
   );

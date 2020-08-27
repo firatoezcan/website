@@ -46,15 +46,19 @@ const Index = () => {
             </div>
             <div className="bg-black-300">
               <Container>
-                <section className="About max-w-2xl mx-auto">
-                  <h1 className="pt-2 text-5xl font-bold">Firat Özcan</h1>
-                  <h2 className="text-3xl font-medium">Fullstack Javascript Entwickler</h2>
-                  <p className="text-xl mb-1">Hey, ich bin Firat 👋</p>
-                  <p className="text-xl mb-1">Freiberuflicher React.js und Node.js Consultant aus dem ruhigen Salzgitter</p>
-                  <p className="text-xl mb-1">Wenn du ein Projekt für mich hast, dann schreib mir doch einfach direkt hier</p>
-                  <p className="text-xl mb-1">Ansonsten kannst du dir für den Anfang auch direkt meinen Lebenslauf herunterladen</p>
+                <section className="About max-w-2xl mx-auto leading-normal">
+                  <h1 className="pt-2 text-4xl sm:text-5xl font-bold">Firat Özcan</h1>
+                  <h2 className="text-xl sm:text-2xl font-medium mb-4">Fullstack Javascript Entwickler</h2>
+                  <p className="text-xl sm:text-2xl font-semibold">Hey, ich bin Firat 👋</p>
+                  <p className="text-base sm:text-xl">
+                    Ich bin ein freiberuflicher React.js und Node.js Consultant aus dem ruhigen Salzgitter
+                  </p>
+                  <p className="text-base sm:text-xl">Wenn du ein Projekt für mich hast, dann schreib mir doch einfach direkt hier</p>
+                  <p className="text-base sm:text-xl mb-3">
+                    Ansonsten kannst du dir für den Anfang auch direkt meinen Lebenslauf herunterladen
+                  </p>
                   <a
-                    className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
+                    className="p-2 mt-2 inline-block text-base sm:text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
                     target="_blank"
                     href="/static/Firat Özcan Lebenslauf Deutsch.pdf"
                   >
@@ -112,7 +116,7 @@ const Index = () => {
                         <div className="mb-4 w-full text-right sm:px-6">
                           <button
                             type="submit"
-                            className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
+                            className="p-2 mt-2 inline-block text-base sm:text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
                           >
                             Nachricht versenden
                           </button>
@@ -121,8 +125,8 @@ const Index = () => {
                     )}
                     {hasSentForm && (
                       <div id="cat-sim">
-                        <h2 className="text-3xl font-medium">Vielen Dank für deine Nachricht!</h2>
-                        <p className="text-xl mb-1">
+                        <h2 className="text-3xl font-medium mb-1">Vielen Dank für deine Nachricht!</h2>
+                        <p className="text-base sm:text-xl mb-3">
                           Solange du auf eine Antwort wartest, kannst du dir hier zufällige Katzenbilder anschauen
                         </p>
                         <img src={randomCat} alt="Absolut süße Katze, alle Katzen sind süß" className="h-80 block" />
@@ -134,11 +138,11 @@ const Index = () => {
                             setRandomCat(newCat);
                             setCatIsLoading(false);
                           }}
-                          className="p-2 mt-2 inline-block text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
+                          className="p-2 mt-4 inline-block text-base sm:text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
                         >
                           NEUE KATZE BITTE!!!
                         </button>
-                        <p className="text-xl mt-2">Liebe Grüße aus dem Dorfe ❤</p>
+                        <p className="text-base sm:text-xl mt-2">Liebe Grüße aus dem Dorfe ❤</p>
                       </div>
                     )}
                   </div>
