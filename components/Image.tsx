@@ -11,7 +11,7 @@ export const Image = ({ src, className, alt }: Props) => {
   return (
     <div className={className}>
       {/* <img className="block w-full" src={image.placeholder} alt={`Placeholder - ${alt}`} /> */}
-      <img className="block -mt-full" srcSet={image.srcSet} src={image.src} alt={alt || ""} loading="lazy" />
+      <img className="block" srcSet={image.srcSet} src={image.src} alt={alt || ""} loading="lazy" />
     </div>
   );
 };
