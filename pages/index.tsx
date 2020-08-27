@@ -81,12 +81,14 @@ const Index = () => {
                           );
                           const headers = new Headers();
                           headers.append("Content-Type", "application/json");
-                          await fetch("https://enzql28h64jifyn.m.pipedream.net", {
-                            method: "POST",
-                            headers,
-                            mode: "cors",
-                            body: JSON.stringify(data),
-                          });
+                          if (process.env.NODE_ENV === "production") {
+                            await fetch("https://enzql28h64jifyn.m.pipedream.net", {
+                              method: "POST",
+                              headers,
+                              mode: "cors",
+                              body: JSON.stringify(data),
+                            });
+                          }
                           const newCat = await getNewRandomCat();
                           setRandomCat(newCat);
                           setHasSentForm(true);
@@ -129,7 +131,7 @@ const Index = () => {
                         <p className="text-base sm:text-xl mb-3">
                           Solange du auf eine Antwort wartest, kannst du dir hier zufällige Katzenbilder anschauen
                         </p>
-                        <img src={randomCat} alt="Absolut süße Katze, alle Katzen sind süß" className="h-80 block" />
+                        <img src={randomCat} alt="Absolut süße Katze, alle Katzen sind süß" className="w-full sm:w-auto sm:h-80 block" />
                         <button
                           onClick={async () => {
                             if (catIsLoading) return;
