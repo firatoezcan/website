@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
           <meta property="twitter:url" content="https://firatoezcan.com/" />
           <meta property="twitter:title" content="Firat Özcan | Homepage" />
           <meta property="twitter:description" content="Freiberuflicher Software Entwickler für React.js, Node.js und GraphQL" />
-          <meta property="twitter:image" content="" />
+          <meta property="twitter:image" content={image.images[3].path} />
         </Head>
         <body>
           <Main />
