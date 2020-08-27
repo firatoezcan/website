@@ -10,8 +10,8 @@ export const Image = ({ src, className, alt }: Props) => {
   const image = getImage(src);
   return (
     <div className={className}>
-      {/* <img className="block w-full" src={image.placeholder} alt={`Placeholder - ${alt}`} /> */}
-      <img className="block" srcSet={image.srcSet} src={image.src} alt={alt || ""} loading="lazy" />
+      <div style={{ paddingTop: (image.height / image.width) * 100 + "%" }} />
+      <img className="absolute inset-0" srcSet={image.srcSet} src={image.src} alt={alt || ""} loading="lazy" />
     </div>
   );
 };
