@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="description" content="German software engineer for React.js, Node.js and GraphQL" />
-          <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
           <meta name="twitter:title" content="Firat Özcan | Fullstack JS" />
           <meta name="twitter:description" content="German software engineer for React.js, Node.js and GraphQL" />
         </Head>

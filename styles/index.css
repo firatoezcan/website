@@ -1,6 +1,42 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+a,
+button {
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  bottom: 0;
+  left: 1px;
+  background: currentColor;
+  transition: all 0.15s ease 0s;
+}
+
+a.border-2::before,
+button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0px;
+  background: currentColor;
+  transition: all 0.15s ease 0s;
+}
+
+a:hover::before {
+  width: calc(100% - 1px)
+}
+
+button:hover::before,
+a.border-2:hover::before {
+  width: 100%
+}
 
 /* Start purging... */
 @tailwind components;

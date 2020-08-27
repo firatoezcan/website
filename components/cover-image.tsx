@@ -1,5 +1,6 @@
 import cn from "classnames";
 import Link from "next/link";
+import { Image } from "./Image";
 
 type Props = {
   title: string;
@@ -8,8 +9,9 @@ type Props = {
 };
 
 const CoverImage = ({ title, src, slug }: Props) => {
+  console.log(src);
   const image = (
-    <img
+    <Image
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn("shadow-small", {
