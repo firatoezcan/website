@@ -28,14 +28,14 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://firatoezcan.com/" />
           <meta property="og:title" content="Firat Özcan | Homepage" />
           <meta property="og:description" content="Freiberuflicher Software Entwickler für React.js, Node.js und GraphQL" />
-          <meta property="og:image" content={image.images[3].path} />
+          <meta property="og:image" content={"https://firatoezcan.com" + image.images[3].path} />
 
           {/* Twitter */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://firatoezcan.com/" />
           <meta property="twitter:title" content="Firat Özcan | Homepage" />
           <meta property="twitter:description" content="Freiberuflicher Software Entwickler für React.js, Node.js und GraphQL" />
-          <meta property="twitter:image" content={image.images[3].path} />
+          <meta property="twitter:image" content={"https://firatoezcan.com" + image.images[3].path} />
         </Head>
         <body>
           <Main />
