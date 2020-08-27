@@ -69,7 +69,7 @@ const Index = () => {
 
               <div className="relative mt-16">
                 <Container>
-                  <div className="w-full max-w-2xl mx-auto relative z-10">
+                  <div className="w-full max-w-2xl mx-auto">
                     {!hasSentForm && (
                       <form
                         id="contact"
