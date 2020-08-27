@@ -51,18 +51,18 @@ const Index = () => {
                   <h2 className="text-xl sm:text-2xl font-medium mb-4">Fullstack Javascript Entwickler</h2>
                   <p className="text-xl sm:text-2xl font-semibold">Hey, ich bin Firat 👋</p>
                   <p className="text-base sm:text-xl">
-                    Ich bin ein freiberuflicher React.js und Node.js Consultant aus dem ruhigen Salzgitter
+                    Ich bin ein freiberuflicher React.js und Node.js Consultant aus dem ruhigen Salzgitter.
                   </p>
-                  <p className="text-base sm:text-xl">Wenn du ein Projekt für mich hast, dann schreib mir doch einfach direkt hier</p>
+                  <p className="text-base sm:text-xl">Wenn du ein Projekt für mich hast, dann schreib mir doch einfach direkt hier.</p>
                   <p className="text-base sm:text-xl mb-3">
-                    Ansonsten kannst du dir für den Anfang auch direkt meinen Lebenslauf herunterladen
+                    Ansonsten kannst du dir für den Anfang auch direkt meinen Lebenslauf herunterladen.
                   </p>
                   <a
                     className="p-2 mt-2 inline-block text-base sm:text-xl hover:text-gray-300 transition duration-150 ease-in-out border-2 border-opacity-50 border-gray-400 focus:outline-none focus:border-opacity-100"
                     target="_blank"
                     href="/static/Firat Özcan Lebenslauf Deutsch.pdf"
                   >
-                    Jetzt herunterladen
+                    Lebenslauf herunterladen
                   </a>
                 </section>
               </Container>
@@ -103,7 +103,7 @@ const Index = () => {
                           <Input id="email" label="E-Mail" placeholder="firat.oezcan@gmail.com" required />
                         </div>
                         <div className="mb-4 w-full sm:w-1/2 sm:px-6">
-                          <Input id="phone" label="Telefonnummer" placeholder="0123 456 789" required />
+                          <Input id="phone" label="Telefonnummer" placeholder="+49 162 891 74 52" required />
                         </div>
                         <div className="mb-4 w-full sm:px-6">
                           <Textarea
