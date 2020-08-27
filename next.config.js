@@ -25,7 +25,7 @@ module.exports = withPlugins([
     pngquant: true,
   }, ],
   [optional(() => require('next-plugin-preact')), {},
-    [PHASE_PRODUCTION_BUILD]
+    [PHASE_PRODUCTION_SERVER, PHASE_EXPORT]
   ]
 
   // your other plugins here
