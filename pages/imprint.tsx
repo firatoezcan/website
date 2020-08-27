@@ -20,16 +20,16 @@ const Imprint = () => {
           </Head>
           <div className="bg-black-300">
             <Container>
-              <section className="Home pt-40">
+              <section className="Home pt-40 leading-normal">
                 <div>
-                  <h3 className="pt-2 text-3xl font-bold">Informationen nach § 5 TMG</h3>
-                  <p className="text-xl mb-1">Firat Özcan</p>
-                  <p className="text-xl mb-1">firatoezcan.com</p>
-                  <p className="text-xl mb-1">Heinrichstraße 9</p>
-                  <p className="text-xl mb-1">38259 Salzgitter</p>
-                  <h3 className="pt-2 text-3xl font-bold">Kontakt</h3>
-                  <p className="text-xl mb-1">Tel.: +49 (0) 162 / 891 7452</p>
-                  <p className="text-xl mb-1">
+                  <h3 className="pt-2 text-xl sm:text-2xl font-bold">Informationen nach § 5 TMG</h3>
+                  <p className="text-base sm:text-xl">Firat Özcan</p>
+                  <p className="text-base sm:text-xl">firatoezcan.com</p>
+                  <p className="text-base sm:text-xl">Heinrichstraße 9</p>
+                  <p className="text-base sm:text-xl">38259 Salzgitter</p>
+                  <h3 className="pt-2 text-xl sm:text-2xl font-bold">Kontakt</h3>
+                  <p className="text-base sm:text-xl">Tel.: +49 (0) 162 / 891 7452</p>
+                  <p className="text-base sm:text-xl">
                     E-Mail: <a href="mailto:firatoezcan@gmail.com">firatoezcan@gmail.com</a>
                   </p>
                 </div>
