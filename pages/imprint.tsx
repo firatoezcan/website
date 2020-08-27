@@ -16,7 +16,7 @@ const Imprint = () => {
         </nav>
         <main>
           <Head>
-            <title>Firat Özcan | Impressumg</title>
+            <title>Firat Özcan | Impressum</title>
           </Head>
           <div className="bg-black-300">
             <Container>
@@ -28,9 +28,9 @@ const Imprint = () => {
                   <p className="text-xl mb-1">Heinrichstraße 9</p>
                   <p className="text-xl mb-1">38259 Salzgitter</p>
                   <h3 className="pt-2 text-3xl font-bold">Kontakt</h3>
-                  <p className="text-xl mb-1">Phone: +49 (0) 162 / 891 7452</p>
+                  <p className="text-xl mb-1">Tel.: +49 (0) 162 / 891 7452</p>
                   <p className="text-xl mb-1">
-                    E-mail: <a href="mailto:firatoezcan@gmail.com">firatoezcan@gmail.com</a>
+                    E-Mail: <a href="mailto:firatoezcan@gmail.com">firatoezcan@gmail.com</a>
                   </p>
                 </div>
               </section>
