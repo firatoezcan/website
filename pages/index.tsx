@@ -49,7 +49,6 @@ const Index = () => {
                 <section className="About max-w-2xl mx-auto leading-normal">
                   <h1 className="pt-2 text-4xl sm:text-5xl font-bold">Firat Özcan</h1>
                   <h2 className="text-xl sm:text-2xl font-medium mb-4">Fullstack Javascript Entwickler</h2>
-                  <p className="text-xl sm:text-2xl font-semibold">Hey, ich bin Firat 👋</p>
                   <p className="text-base sm:text-xl">
                     Ich bin ein freiberuflicher React.js und Node.js Consultant aus dem ruhigen Salzgitter.
                   </p>
