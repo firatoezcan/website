@@ -17,19 +17,26 @@ const Imprint = () => {
         <main>
           <Head>
             <title>Firat Özcan | Impressum</title>
+            <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
           </Head>
           <div className="bg-black-300">
             <Container>
-              <section className="Home pt-40 leading-normal">
+              <section className="text-white pt-40 prose prose-sm md:prose-lg lg:prose-xl max-w-4xl">
                 <div>
-                  <h3 className="pt-2 text-xl sm:text-2xl font-bold">Informationen nach § 5 TMG</h3>
-                  <p className="text-base sm:text-xl">Firat Özcan</p>
-                  <p className="text-base sm:text-xl">firatoezcan.com</p>
-                  <p className="text-base sm:text-xl">Heinrichstraße 9</p>
-                  <p className="text-base sm:text-xl">38259 Salzgitter</p>
-                  <h3 className="pt-2 text-xl sm:text-2xl font-bold">Kontakt</h3>
-                  <p className="text-base sm:text-xl">Tel.: +49 (0) 162 / 891 7452</p>
-                  <p className="text-base sm:text-xl">
+                  <h1>Informationen nach § 5 TMG</h1>
+                  <p>
+                    Firat Özcan
+                    <br />
+                    firatoezcan.com
+                    <br />
+                    Heinrichstraße 9
+                    <br />
+                    38259 Salzgitter
+                  </p>
+                  <h2>Kontakt</h2>
+                  <p>
+                    Tel.: +49 (0) 162 / 891 7452
+                    <br />
                     E-Mail: <a href="mailto:firatoezcan@gmail.com">firatoezcan@gmail.com</a>
                   </p>
                 </div>
