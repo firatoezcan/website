@@ -24,7 +24,11 @@ module.exports = withPlugins([
     },
     pngquant: true,
   }, ],
-  [require('next-plugin-preact')]
+  [require('next-plugin-preact')],
+  [(nextConfig = {}) => {
+    console.log(nextConfig)
+    return nextConfig
+  }]
 
   // your other plugins here
 
