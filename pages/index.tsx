@@ -34,7 +34,7 @@ const Index = () => {
                   <Image
                     src="static/Firat-2.jpg"
                     className="block rounded-full w-64 sm:w-80 mx-auto transform overflow-hidden"
-                    sizes="16rem, (min-width: 640px) 20rem"
+                    sizes="(min-width: 640px) 20rem, 16rem"
                   />
                 </section>
               </Container>
