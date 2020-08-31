@@ -14,6 +14,7 @@ const {
 module.exports = withPlugins([
   [optimizedImages, {
     handleImages: ["jpeg", "jpg", "png", "svg", "webp", "gif", "ico"],
+    inlineImageLimit: -1,
     optimizeImagesInDev: true,
     defaultImageLoader: "responsive-loader",
     responsive: {
