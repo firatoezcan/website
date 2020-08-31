@@ -259,6 +259,12 @@ const Imprint = () => {
                     Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen –
                     bleiben unberührt.
                   </p>
+                  <p>
+                    Quelle:{" "}
+                    <a href="https://www.e-recht24.de" rel="noreferrer noopener">
+                      https://www.e-recht24.de
+                    </a>
+                  </p>
                 </div>
               </section>
             </Container>
