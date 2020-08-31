@@ -9,12 +9,16 @@ const Footer = () => {
         <div className="flex justify-between">
           <p className="">© 2020 Firat Özcan</p>
           <div className="flex flex-wrap justify-end -mx-3">
-            <Link href="/privacy">
-              <a className="px-3 hover:text-gray-300 transition duration-150 ease-in-out">Datenschutzerklärung</a>
-            </Link>
-            <Link href="/imprint">
-              <a className="px-3 hover:text-gray-300 transition duration-150 ease-in-out">Impressum</a>
-            </Link>
+            <div className="px-3">
+              <Link href="/privacy">
+                <a className="hover:text-gray-300 transition duration-150 ease-in-out">Datenschutzerklärung</a>
+              </Link>
+            </div>
+            <div className="px-3">
+              <Link href="/imprint">
+                <a className="hover:text-gray-300 transition duration-150 ease-in-out">Impressum</a>
+              </Link>
+            </div>
           </div>
         </div>
       </Container>
