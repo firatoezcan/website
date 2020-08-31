@@ -31,7 +31,11 @@ const Index = () => {
             <div className="bg-black-500">
               <Container>
                 <section className="Home">
-                  <Image src="static/Firat-2.jpg" className="block rounded-full w-64 sm:w-80 mx-auto transform overflow-hidden" />
+                  <Image
+                    src="static/Firat-2.jpg"
+                    className="block rounded-full w-64 sm:w-80 mx-auto transform overflow-hidden"
+                    sizes="16rem, (min-width: 640px) 20rem"
+                  />
                 </section>
               </Container>
               <svg viewBox="0 0 1695 57" preserveAspectRatio="none" className="fill-current text-black-300 bg-black-500">
