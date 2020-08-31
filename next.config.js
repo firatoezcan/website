@@ -14,12 +14,11 @@ const {
 module.exports = withPlugins([
   [optimizedImages, {
     handleImages: ["jpeg", "jpg", "png", "svg", "webp", "gif", "ico"],
-    inlineImageLimit: -1,
     optimizeImagesInDev: true,
     defaultImageLoader: "responsive-loader",
     responsive: {
       sizes: [320, 600, 920, 1240],
-      placeholder: true,
+      placeholder: false,
       placeholderSize: 80,
       adapter: require('responsive-loader/sharp')
     },
