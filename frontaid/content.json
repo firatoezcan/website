@@ -1,3 +1,9 @@
 {
-  "custom-field": "Test"
+  "custom-field": "Test",
+  "blog": [
+    {
+      "title": "Blogpost 1",
+      "text": "<p>Lorem Ipsum Color Dit samet oder was auch immer</p><p><strong>xdxd</strong></p>"
+    }
+  ]
 }
