@@ -1,6 +1,5 @@
-import Container from "./container";
-import { EXAMPLE_PATH } from "../lib/constants";
 import Link from "next/link";
+import Container from "./container";
 
 const Footer = () => {
   return (
@@ -11,12 +10,12 @@ const Footer = () => {
           <div className="flex flex-wrap justify-end -mx-3">
             <div className="px-3">
               <Link href="/privacy">
-                <a className="hover:text-gray-300 transition duration-150 ease-in-out">Datenschutzerklärung</a>
+                <a className="transition duration-150 ease-in-out hover:text-gray-300">Datenschutzerklärung</a>
               </Link>
             </div>
             <div className="px-3">
               <Link href="/imprint">
-                <a className="hover:text-gray-300 transition duration-150 ease-in-out">Impressum</a>
+                <a className="transition duration-150 ease-in-out hover:text-gray-300">Impressum</a>
               </Link>
             </div>
           </div>
