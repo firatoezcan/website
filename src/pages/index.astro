@@ -1,0 +1,68 @@
+---
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Hr from "@components/Hr.astro";
+import Socials from "@components/Socials.astro";
+import { SOCIALS } from "@config";
+import Layout from "@layouts/Layout.astro";
+
+const socialCount = SOCIALS.filter(social => social.active).length;
+---
+
+<Layout>
+  <Header />
+  <main id="main-content">
+    <section class="max-w-3xl px-4 pt-8 pb-6 mx-auto">
+      <p class="inline-block my-4 text-3xl font-bold sm:my-8 sm:text-5xl">
+        Firat Özcan
+      </p>
+
+      <div class="mb-6 leading-normal">
+        <p class="mb-2">
+          Hey, ich bin Firat, ein echter Full Stack Architect, der sich
+          leidenschaftlich für alles rund ums Web interessiert.
+        </p>
+        <p class="mb-2">
+          Mit meiner Expertise in TypeScript, React und Next.js habe ich das
+          Know-How, um Projekte von der Idee bis zur Vollendung zu führen.
+        </p>
+        <p class="mb-2">
+          Ich liebe es, mich ständig weiterzuentwickeln und immer auf dem
+          neuesten Stand der Webtechnologien zu bleiben – weil ich weiß, dass
+          die digitale Welt keine Grenzen kennt.
+        </p>
+        <p class="mb-3">
+          Schön, dass du hier bist, lass uns gemeinsam Großartiges erschaffen!
+        </p>
+      </div>
+      <div class="flex flex-col mb-6">
+        <a
+          class="self-start inline-block p-2 mb-2 text-base border-2 sm:text-xl hover:text-skin-accent"
+          target="_blank"
+          href="https://calendly.com/firatoezcan/coffee-break"
+        >
+          Zum Kaffee verabreden
+        </a>
+        <a
+          class="text-xs underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          target="_blank"
+          href="/Firat Özcan Lebenslauf Deutsch.pdf"
+        >
+          Oder lieber den Lebenslauf herunterladen
+        </a>
+      </div>
+      {
+        // only display if at least one social link is enabled
+        socialCount > 0 && (
+          <div class="flex flex-col mt-4 sm:flex-row sm:items-center">
+            <div class="mb-1 mr-2 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <Socials />
+          </div>
+        )
+      }
+    </section>
+    <Hr />
+  </main>
+</Layout>
+
+<Footer />
