@@ -36,7 +36,6 @@ export default class MyDocument extends Document {
           <meta property="twitter:title" content="Firat Özcan | Homepage" />
           <meta property="twitter:description" content="Freiberuflicher Software Entwickler für React.js, Node.js und GraphQL" />
           <meta property="twitter:image" content={"https://firatoezcan.com" + image.images[3].path} />
-          <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="230abc33-c26b-4276-ac4c-583179d6e0da" async></script>
         </Head>
         <body>
           <Main />
