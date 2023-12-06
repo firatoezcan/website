@@ -24,9 +24,9 @@ const Imprint = () => {
                     <br />
                     firatoezcan.com
                     <br />
-                    Heinrichstraße 9
+                    Leonhardstraße 44b
                     <br />
-                    38259 Salzgitter
+                    38102 Braunschweig
                   </p>
                   <h2>Kontakt</h2>
                   <p>
